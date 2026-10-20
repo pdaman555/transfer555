@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗаВози — Премиальный трансфер на Toyota Camry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+<header class="header">
+    <div class="container header-container">
+        <a href="#" class="logo">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" stroke="#FFC107" stroke-width="6"/>
+                <path d="M30 40H70L60 65H40L30 40Z" fill="#FFC107"/>
+                <path d="M25 65H75" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-text">За<span class="accent">Вози</span></span>
+        </a>
+
+        <!-- Бургер -->
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="nav">
+            <a href="#services">Услуги</a>
+            <a href="#about">О сервисе</a>
+            <a href="#order" class="btn btn-secondary">Заказать онлайн</a>
+        </nav>
+    </div>
+</header>
+
+    <!-- Главный экран (Hero) -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Трансфер бизнес-класса на <span class="accent">Toyota Camry</span></h1>
+                <p>Безупречный комфорт в каждой поездке по городу, межгороду и в аэропорт. Профессиональные водители, фиксированные цены.</p>
+                <div class="hero-actions">
+                    <a href="#order" class="btn btn-primary">Рассчитать поездку</a>
+                    <a href="tel:+79991234567" class="phone-link">+7 (999) 123-45-67</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Заглушка качественного фото Camry -->
+                <img src="img/Camry.png" alt="Toyota Camry">
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел Услуг -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наши направления</h2>
+            <div class="services-grid">
+                <div class="service-card" data-rate="35">
+                    <h3>По городу</h3>
+                    <p>Оперативная подача от 15 минут. Идеально для бизнес-встреч и комфортного передвижения.</p>
+                    <span class="price-from">от 1 200 ₽</span>
+                </div>
+                <div class="service-card active" data-rate="30">
+                    <h3>Аэропорт</h3>
+                    <p>Отслеживание рейсов, бесплатное ожидание при задержке, помощь с тяжелым багажом.</p>
+                    <span class="price-from">от 2 500 ₽</span>
+                </div>
+                <div class="service-card" data-rate="25">
+                    <h3>Межгород</h3>
+                    <p>Безопасные и плавные поездки на любые расстояния. Климат-контроль и вода в салоне.</p>
+                    <span class="price-from">от 25 ₽ / км</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Раздел О сервисе -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">О сервисе <span class="accent">ЗаВози</span></h2>
+            
+            <!-- Интерактивные счетчики -->
+            <div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-number" data-target="5000+">5 000+</div>
+        <div class="stat-label">Успешных поездок</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number" data-target="15 мин">15 мин</div>
+        <div class="stat-label">Средняя подача авто</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-number" data-target="4.9 / 5">4.9 / 5</div>
+        <div class="stat-label">Рейтинг в приложениях</div>
+    </div>
+</div>
+
+            <!-- Интерактивные вкладки: Описание авто -->
+            <div class="about-tabs-container">
+                <h3>Наш автопарк: Бизнес-класс в деталях</h3>
+                <p class="tabs-subtitle">Мы используем исключительно свежие модели Toyota Camry последних поколений, чтобы гарантировать безопасность и статус.</p>
+                
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="comfort">Комфорт в салоне</button>
+                    <button class="tab-btn" data-tab="safety">Безопасность</button>
+                    <button class="tab-btn" data-tab="service">Сервис на борту</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="comfort">
+                        <div class="panel-grid">
+                            <div class="panel-text">
+                                <h4>Просторный кожаный салон</h4>
+                                <p>Каждая поездка на Toyota Camry дарит ощущение премиальности. Двухзонный климат-контроль настраивается индивидуально под ваши пожелания. Шумоизоляция высокого уровня позволит вам расслабиться или провести важный рабочий звонок в тишине.</p>
+                            </div>
+                            <div class="panel-img">
+                              <img src="img/saloon.png" alt="Салон Toyota Camry">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="safety">
+                        <div class="panel-grid">
+                            <div class="panel-text">
+                                <h4>Интеллектуальные системы защиты</h4>
+                                <p>Автомобили оборудованы комплексом безопасности Toyota Safety Sense: адаптивный круиз-контроль, система удержания в полосе и автоматическое торможение. Все пассажиры и багаж застрахованы на время пути.</p>
+                            </div>
+                            <div class="panel-img">
+                                <img src="img/Safety.png" alt="Безопасность авто">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="service">
+                        <div class="panel-grid">
+                            <div class="panel-text">
+                                <h4>Внимание к каждой детали</h4>
+                                <p>В салоне вас всегда ждут: бутылка прохладной минеральной воды, влажные салфетки, зарядные устройства для iOS и Android, а также возможность подключить свою музыку через Bluetooth.</p>
+                            </div>
+                            <div class="panel-img">
+                                <img src="img/water.png" alt="Сервис">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Интерактивный FAQ (Аккордеон) -->
+            <div class="faq-container">
+                <h3 class="faq-title">Часто задаваемые вопросы</h3>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Как я узнаю точную стоимость поездки на межгород?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Цена рассчитывается строго по километражу (от 25 ₽/км) от начальной до конечной точки. Менеджер зафиксирует стоимость при подтверждении заявки, и она не изменится из-за пробок или ожидания в пути.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Что делать, если мой авиарейс задерживается?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Не переживайте. Мы бесплатно отслеживаем статус рейса по его номеру. Водитель приедет ровно к фактическому времени посадки самолета, а в стоимость трансфера уже включено 60 минут бесплатного ожидания в аэропорту.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Предоставляются ли отчетные документы для бухгалтерии?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, конечно. Мы выдаем электронные чеки с QR-кодом, а также можем составить акт выполненных работ при безналичной оплате со счета юридического лица.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Раздел с интерактивной онлайн-заявкой -->
+    <section id="order" class="order-section">
+        <div class="container order-container">
+            <div class="order-info">
+                <h2>Заказать трансфер в 2 клика</h2>
+                <p>Заполните форму, и наш менеджер свяжется с вами в течение 5 минут для подтверждения бронирования.</p>
+                <div class="features-list">
+                    <div class="feature-item">✓ Всегда чистый кузов и салон</div>
+                    <div class="feature-item">✓ Водители в строгом дресс-коде</div>
+                    <div class="feature-item">✓ Детское кресло / бустер по запросу</div>
+                </div>
+            </div>
+            <div class="order-form-block">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="tariff">Тип трансфера</label>
+                        <select id="tariff" required>
+                            <option value="airport">В аэропорт / Из аэропорта</option>
+                            <option value="city">По городу (почасовая)</option>
+                            <option value="intercity">Межгород</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="route-from">Откуда</label>
+                        <input type="text" id="route-from" placeholder="Адрес или терминал" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="route-to">Куда</label>
+                        <input type="text" id="route-to" placeholder="Куда едем" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Дата</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Время</label>
+                            <input type="time" id="time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    
+                    <!-- Интерактивный просчет (демо) -->
+                    <div class="live-calc">
+                        <span>Предварительная стоимость:</span>
+                        <strong id="livePrice">2 500 ₽</strong>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Оформить заявку</button>
+                </form>
+                <div id="successMessage" class="success-message hidden">
+                    <h3>Заявка успешно отправлена!</h3>
+                    <p>Мы уже обрабатываем данные и свяжемся с вами в ближайшее время.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал (Footer) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Сервис трансфера «ЗаВози». Все права защищены.</p>
+            <p>Автомобиль Toyota Camry XV55</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
